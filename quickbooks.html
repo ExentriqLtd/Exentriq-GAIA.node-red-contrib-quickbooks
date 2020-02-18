@@ -6,7 +6,8 @@
             consumerKey: {required:true},
             consumerSecret: {required:true},
             oauthToken: {required:true},
-            oauthTokenSecret: {required:true},
+            oauthTokenSecret: {required:false},
+            refreshToken: {required:false},
             realmId: {required:true},
             destination: {required:true, value:"Production"}
         },
@@ -36,6 +37,10 @@
 	<div class="form-row">
         <label for="node-config-input-oauthTokenSecret"><i class="icon-tag"></i> OAuth token secret</label>
         <input type="text" id="node-config-input-oauthTokenSecret" placeholder="OAuth token secret">
+    </div>
+  <div class="form-row">
+        <label for="node-config-input-refreshToken"><i class="icon-tag"></i> Refresh Token</label>
+        <input type="text" id="node-config-input-refreshToken" placeholder="Refresh Token">
     </div>
 	<div class="form-row">
         <label for="node-config-input-realmId"><i class="icon-tag"></i> Realm id</label>
